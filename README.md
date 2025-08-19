@@ -12,12 +12,9 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 - [Data Discovery & Access APIs](#data-discovery--access-apis)
 - [Cloud & Scalable Processing](#cloud--scalable-processing)
 - [Python Libraries](#python-libraries)
-- [Point Cloud / Geospatial Tooling](#point-cloud--geospatial-tooling)
 - [Visualization & Exploration](#visualization--exploration)
-- [Thematic Science Tools](#thematic-science-tools)
-- [Quality, Calibration & Ancillary Data](#quality-calibration--ancillary-data)
 - [Tutorials, Courses & Notebooks](#tutorials-courses--notebooks)
-- [Portals & Data Archives](#portals--data-archives)
+- [Quality, Calibration & Ancillary Data](#quality-calibration--ancillary-data)
 - [Related Missions & Complementary Datasets](#related-missions--complementary-datasets)
 - [Community & Communication](#community--communication)
 - [Contributing](#contributing)
@@ -26,124 +23,65 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 
 ## General / Multi-Purpose
 
-* [icepyx](https://github.com/icepyx/icepyx) - Unified Python interface for discovery, access, subsetting, and basic analysis of ICESat-2 (ATL*) products via NASA APIs. ![last commit](https://img.shields.io/github/last-commit/icepyx/icepyx?label=last%20commit)
-* [SlideRule Earthdata](https://github.com/SlideRuleEarth/sliderule) - Server-side on-demand ICESat-2 photon subsetting, filtering, and derived metrics with Python & C++ API clients. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule?label=last%20commit)
-* [OpenAltimetry](https://openaltimetry.org/) - Web platform for interactive browsing, filtering, and quicklooks of ICESat-2 and ICESat elevation tracks.
+* [NASA ICESat-2 Landing Page](https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/icesat-2)
 * [NSIDC ICESat-2 Data Guide](https://nsidc.org/data/icesat-2) - Official product documentation, user guides, and ancillary references for all ATL datasets.
-* [Earthdata Search](https://search.earthdata.nasa.gov/search?q=ICESat-2) - NASA web interface to discover, subset, and order ICESat-2 granules with custom spatial/temporal filters.
 
 ## Data Discovery & Access APIs
 
+* [Earthdata Search](https://search.earthdata.nasa.gov/search?q=ICESat-2) - NASA web interface to discover, subset, and order ICESat-2 granules with custom spatial/temporal filters.
 * [NASA CMR API](https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html) - REST search endpoint for programmatic discovery of ICESat-2 granules and collections.
-* [NSIDC Subsetting API](https://nsidc.org/support/subsetting) - API enabling spatial, temporal, and parameter-level subsetting of ICESat-2 ATL products.
 * [Harmony API](https://harmony.earthdata.nasa.gov/) - NASA cloud orchestration API for standardized reformatting, reprojection, and subsetting (emerging ICESat-2 support).
-* [SlideRule API](https://slideruleearth.io/rtd/) - High-performance RPC endpoints providing photon-level filtering, ATL03 to ATL08 style products, and derived height metrics.
-* [AWS Open Data (ICESat-2)](https://registry.opendata.aws/icesat-2/) - Public S3 buckets hosting near-real-time ICESat-2 ATL products for direct cloud-native access.
-* [Earthdata Login / EDL](https://urs.earthdata.nasa.gov/) - Authentication service required for most programmatic ICESat-2 data requests.
-* [uip (Unified Ingest Portal) Status](https://status.earthdata.nasa.gov/) - Operational status of NASA endpoints (useful when diagnosing failed data pulls).
 
 ## Cloud & Scalable Processing
 
-* [SlideRule on AWS](https://slideruleearth.io/) - Managed clusters and deploy recipes for large-scale photon querying and derived raster generation.
-* [ICESat-2 Hackweek Cloud Templates](https://github.com/ICESAT-2HackWeek) - Reusable Jupyter/Cloud workflow examples from community hackweeks for rapid startup.
-* [HyP3 (ASF)](https://hyp3-docs.asf.alaska.edu/) - On-demand processing platform (SAR-focused) that increasingly interoperates with ICESat-2 derived analyses.
-* [Open Science Lab (NSIDC)](https://nsidc.org/opensciencelab) - Cloud-hosted workflows and reproducible examples including ICESat-2 Jupyter notebooks.
-* [Pangeo](https://pangeo.io/) - Community cloud ecosystem enabling scalable analysis (ICESat-2 photon & gridded data with dask/xarray patterns).
+* [SlideRule Earth](https://slideruleearth.io) - Server-side, scalable ICESat-2 photon subsetting, filtering, and custom processing with Python & C++ API clients. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule?label=last%20commit)
 
 ## Python Libraries
 
-* [icepyx](https://github.com/icepyx/icepyx) - Streamlines search, download, subsetting, and reading of multiple ATL product HDF5 structures. ![last commit](https://img.shields.io/github/last-commit/icepyx/icepyx?label=last%20commit)
-* [sliderule-python](https://github.com/SlideRuleEarth/sliderule-python) - Python client to query SlideRule services and retrieve photon and elevation products as dataframes/arrays. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule-python?label=last%20commit)
-* [ATL03 Reader Examples](https://github.com/nsidc/NSIDC-Data-Tutorials/tree/main/ICESat-2) - Official sample code for opening and interpreting ATL03 & higher-level products. ![last commit](https://img.shields.io/github/last-commit/nsidc/NSIDC-Data-Tutorials?label=last%20commit)
-* [h5py](https://github.com/h5py/h5py) - Fundamental HDF5 interface used to navigate ICESat-2 file hierarchies and metadata. ![last commit](https://img.shields.io/github/last-commit/h5py/h5py?label=last%20commit)
-* [xarray](https://github.com/pydata/xarray) - Labeled N-D data structures facilitating gridding and combining ATL products (esp. ATL10, ATL14, ATL15). ![last commit](https://img.shields.io/github/last-commit/pydata/xarray?label=last%20commit)
-* [geopandas](https://github.com/geopandas/geopandas) - Vector geospatial operations for ground tracks, region-of-interest clipping, and spatial joins. ![last commit](https://img.shields.io/github/last-commit/geopandas/geopandas?label=last%20commit)
-* [Shapely](https://github.com/shapely/shapely) - Geometric operations used for photon filtering by polygons or buffered tracks. ![last commit](https://img.shields.io/github/last-commit/shapely/shapely?label=last%20commit)
-* [pdal-python](https://github.com/PDAL/PDAL) - Point cloud filters and pipelines adaptable to photon-level (ATL03) processing workflows. ![last commit](https://img.shields.io/github/last-commit/PDAL/PDAL?label=last%20commit)
-* [laspy](https://github.com/laspy/laspy) - Read/write LAS/LAZ allowing export/interchange of ICESat-2 derived point clouds to lidar ecosystems. ![last commit](https://img.shields.io/github/last-commit/laspy/laspy?label=last%20commit)
-* [pyproj](https://github.com/pyproj4/pyproj) - Coordinate transformations (e.g., WGS84 <-> polar stereographic) essential for polar ATL products. ![last commit](https://img.shields.io/github/last-commit/pyproj4/pyproj?label=last%20commit)
-* [rasterio](https://github.com/rasterio/rasterio) - Creation and manipulation of gridded elevation/freeboard/rasterized photon density outputs. ![last commit](https://img.shields.io/github/last-commit/rasterio/rasterio?label=last%20commit)
-* [scipy](https://scipy.org/) - Interpolation, signal filtering, and statistical operations on photon elevations and waveforms.
-* [numpy](https://github.com/numpy/numpy) - Core numerical array computations underlying all higher-level processing.
-
-## Point Cloud / Geospatial Tooling
-
-* [PDAL](https://pdal.io/) - Extensible point cloud processing engine for classification, thinning, and reprojection of photon data.
-* [Entwine](https://entwine.io/) - Builds efficient point cloud octrees enabling web visualization of derived ICESat-2 point sets.
-* [Potree Converter](https://github.com/potree/PotreeConverter) - Converts point clouds (e.g., exported ATL03 photons) into multiresolution formats for web viewing. ![last commit](https://img.shields.io/github/last-commit/potree/PotreeConverter?label=last%20commit)
-* [GDAL](https://gdal.org/) - Foundational raster & vector translation library supporting HDF5 subdatasets and reprojection.
-* [Proj](https://proj.org/) - Standalone cartographic transformations brand powering pyproj & GDAL coordinate operations.
-* [WhiteboxTools](https://www.whiteboxgeo.com/) - Terrain analysis utilities useful after gridding surface heights from ICESat-2.
+* [icepyx](https://icepyx.readthedocs.io) - Unified Python interface for discovery, access, subsetting, and basic analysis of ICESat-2 (ATL*) products via NASA APIs. ![last commit](https://img.shields.io/github/last-commit/icesat2py/icepyx?label=last%20commit)
+* [Earthaccess](https://github.com/nsidc/earthaccess) - python library to search for, and download or stream NASA Earth science data with just a few lines of code. ![last commit](https://img.shields.io/github/last-commit/nsidc/earthaccess?label=last%20commit)
 
 ## Visualization & Exploration
 
-* [OpenAltimetry](https://openaltimetry.org/) - Interactive web map to explore tracks, segments, elevations, and canopy metrics.
-* [sliderule-jupyter](https://github.com/SlideRuleEarth/sliderule-python/tree/master/notebooks) - Notebook examples for dynamic photon queries and quick visual diagnostic plots. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule-python?label=last%20commit)
-* [Kepler.gl](https://kepler.gl/) - Browser-based large-scale geospatial visualization for photon point CSV exports.
-* [Geoviews / Holoviews](https://geoviews.org/) - High-level Python visualization building dynamic datashaded photon density plots.
-* [Plotly Express](https://plotly.com/python/plotly-express/) - Interactive scatter and profile plots of track segments and elevations.
-* [Potree](https://potree.org/) - Web point cloud viewer for 3D exploration of converted photon clouds.
+* [OpenAltimetry](https://openaltimetry.earthdatacloud.nasa.gov/data/) - Web platform for interactive browsing, filtering, and quicklooks of ICESat-2 and ICESat elevation tracks.
+* [SlideRule Earth Example Notebooks](https://github.com/SlideRuleEarth/sliderule-python/tree/main/examples) - Notebook examples for dynamic photon queries and quick visual diagnostic plots. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule-python?label=last%20commit)
 
-## Thematic Science Tools
+## Tutorials, Courses & Notebooks
 
-* [ATL11 Time Series Toolkit](https://github.com/ICESAT-2HackWeek/ATL11_ice_focused) - Example workflows for multi-pass elevation change using repeat-track ATL11. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/ATL11_ice_focused?label=last%20commit)
-* [ATL14/ATL15 Gridded Products](https://nsidc.org/data/ATL14) - Basin-scale ice sheet elevation change and reference surface products for mass balance studies.
-* [ICESat-2 Sea Ice Dashboard](https://earth.gsfc.nasa.gov/cryo/data/icesat-2) - NASA visualizations & summaries of sea ice freeboard and thickness metrics.
-* [Freeboard & Thickness Notebooks](https://github.com/ICESAT-2HackWeek/sea-ice) - Community notebooks deriving sea ice freeboard/thickness from ATL07/ATL10. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/sea-ice?label=last%20commit)
-* [Canopy Height (ATL08) Workflows](https://github.com/ICESAT-2HackWeek/vegetation) - Examples extracting vegetation structure metrics for ecology applications. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/vegetation?label=last%20commit)
-* [Inland Water Elevation (ATL13)](https://nsidc.org/data/ATL13) - Derived inland water surface heights facilitating hydrologic storage change analyses.
-* [Ocean Surface Height (ATL12)](https://nsidc.org/data/ATL12) - Sea surface height and geophysical corrections for oceanography and circulation studies.
-* [Photon Classification Models](https://github.com/ICESAT-2HackWeek/photon-classification) - Machine learning examples for separating signal and noise photons. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/photon-classification?label=last%20commit)
+* [ICESat-2 Pythia Cookbook](https://icesat-2hackweek.github.io/icesat2-cookbook/) - Compilation of tutorials developed from 2019 to present as part of the NASA / UW eScience hackweek program. ![last commit](https://img.shields.io/github/last-commit/icesat-2hackweek/icesat2-cookbook?label=last%20commit)
+* [ICESat-2 Hackweek GitHub Organization](https://github.com/ICESAT-2HackWeek) - Reusable Jupyter/Cloud workflow examples from community hackweeks.
+* [ICESat-2 Hackweek Websites](https://icesat-2.hackweek.io) - JupyterBook websites for ICESat-2 Hackweeks hosted at University of Washington 2019-2025.
+* [NSIDC Data Tutorials](https://github.com/nsidc/NSIDC-Data-Tutorials) - Official step-by-step Python notebooks for opening, filtering, and plotting ATL datasets. ![last commit](https://img.shields.io/github/last-commit/nsidc/NSIDC-Data-Tutorials?label=last%20commit)
+* [OpenAltimetry Tutorials](https://nsidc.org/data/user-resources/help-center/how-use-openaltimetry-icesatglas-data-products) - Usage guides for track selection, filtering, and downloading subsets.
 
 ## Quality, Calibration & Ancillary Data
 
 * [ATL02](https://nsidc.org/data/ATL02) - Raw telemetry with photon time-of-flight and instrument engineering for advanced calibration research.
 * [ATL09](https://nsidc.org/data/ATL09) - Atmospheric layer & cloud flag data supporting photon filtering and canopy penetration assessment.
-* [DEM Auxiliary Data (REMA/ArcticDEM)](https://www.pgc.umn.edu/data/arcticdem/) - Polar DEM mosaics used for reference elevation and geolocation QA.
-* [ICESat GLAS (Legacy)](https://nsidc.org/data/icesat) - Historical laser altimetry providing multi-decadal context for elevation change.
-* [GRACE/GRACE-FO Mascon](https://podaac.jpl.nasa.gov/GRACE) - Complementary mass balance signals to compare with ICESat-2 elevation change in ice sheets.
-* [ERA5 Reanalysis](https://cds.climate.copernicus.eu/) - Atmospheric state variables for correcting backscatter or interpreting surface processes.
-
-## Tutorials, Courses & Notebooks
-
-* [ICESat-2 Hackweek Archives](https://icesat-2-2023.hackweek.io/) - Curated schedule, lecture recordings, and code from annual community hackweeks.
-* [NSIDC Data Tutorials](https://github.com/nsidc/NSIDC-Data-Tutorials/tree/main/ICESat-2) - Official step-by-step Python notebooks for opening, filtering, and plotting ATL datasets. ![last commit](https://img.shields.io/github/last-commit/nsidc/NSIDC-Data-Tutorials?label=last%20commit)
-* [NASA Earthdata Webinars](https://www.earthdata.nasa.gov/learn/webinars-and-tutorials) - Recorded sessions often featuring ICESat-2 access and application topics.
-* [SlideRule Documentation & Notebooks](https://slideruleearth.io/rtd/) - API usage guides, performance notes, and reproducible photon workflow examples.
-* [Pangeo Gallery ICESat-2](https://gallery.pangeo.io/) - Shared scientific notebooks demonstrating cloud-native analysis patterns.
-* [OpenAltimetry Tutorials](https://openaltimetry.org/data/about) - Usage guides for track selection, filtering, and downloading subsets.
-
-## Portals & Data Archives
-
-* [NSIDC DAAC](https://nsidc.org/daac) - Primary archive and distribution for all operational ICESat-2 ATL collections and documentation.
-* [NASA Earthdata Search](https://search.earthdata.nasa.gov/) - Unified granule discovery interface across DAACs including NSIDC.
-* [AWS S3 ICESat-2 Buckets](https://registry.opendata.aws/icesat-2/) - Direct public object store access enabling parallelized cloud compute without downloads.
-* [OpenAltimetry Download](https://openaltimetry.org/data/download) - Lightweight selection and retrieval interface for specific track segments and variables.
-* [OPeNDAP (via Harmony/Hyrax)](https://wiki.esipfed.org/HDF-EOS:OPeNDAP) - Subsetting and partial variable retrieval for select ATL products to minimize transfers.
-* [GCMD Keywords](https://gcmd.earthdata.nasa.gov/) - Controlled vocabulary aiding precise product discovery and dataset tagging.
 
 ## Related Missions & Complementary Datasets
 
 * [ICESat (GLAS)](https://nsidc.org/data/icesat) - Predecessor laser altimetry mission enabling multi-epoch elevation change assessment.
 * [GEDI](https://gedi.umd.edu/) - Spaceborne waveform lidar complementing ICESat-2 canopy height sampling for biomass analyses.
 * [CryoSat-2](https://earth.esa.int/eogateway/missions/cryosat) - Radar altimetry mission offering complementary sea ice thickness and ice sheet elevation trends.
-* [Sentinel-1 SAR](https://sentinel.esa.int/) - Active microwave backscatter supporting surface type classification and change detection alongside elevation trends.
+* [Sentinel-1 SAR](https://dataspace.copernicus.eu/data-collections/sentinel-data/sentinel-1) - Active microwave backscatter supporting surface type classification and change detection alongside elevation trends.
 * [Landsat Collection](https://landsat.gsfc.nasa.gov/) - Multispectral imagery for land cover context and seasonal melt pond / vegetation mapping.
 * [MODIS / VIIRS Snow & Sea Ice](https://nsidc.org/data/modis) - Daily snow/ice products enabling temporal context for elevation/freeboard retrievals.
+* [DEM Auxiliary Data (REMA/ArcticDEM)](https://www.pgc.umn.edu/data/arcticdem/) - Polar DEM mosaics used for reference elevation and geolocation QA.
+* [ICESat GLAS (Legacy)](https://nsidc.org/data/icesat) - Historical laser altimetry providing multi-decadal context for elevation change.
+* [GRACE/GRACE-FO Mascon](https://podaac.jpl.nasa.gov/GRACE) - Complementary mass balance signals to compare with ICESat-2 elevation change in ice sheets.
+* [ERA5 Reanalysis](https://cds.climate.copernicus.eu/datasets) - Atmospheric state variables for correcting backscatter or interpreting surface processes.
 
 ## Community & Communication
 
-* [ICESat-2 Hackweek Slack](https://icesat-2.hackweek.io/) - Real-time discussion channels for workflows, troubleshooting, and collaboration (event-specific access).
 * [NSIDC User Support](https://nsidc.org/support) - Helpdesk for data access, documentation, and product interpretation questions.
 * [Earthdata Forum](https://forum.earthdata.nasa.gov/) - Official Q&A forum covering API access, subsetting, and dataset usage topics.
-* [AGU Cryosphere Sessions](https://www.agu.org/) - Conference sessions highlighting latest ICESat-2 science and methods developments.
-* [Twitter/X #ICESat2](https://twitter.com/search?q=%23ICESat2) - Social feed for mission news, data releases, and application highlights.
 
 ---
 
 ## Contributing
 
-Contributions welcome! Please open an issue or pull request adding a resource with: (1) Name, (2) URL, (3) one-sentence description, (4) category suggestion. Keep descriptions concise, neutral, and avoid promotional language. Duplicates or out-of-scope links (non-ICESat-2 focused) may be declined to maintain curation quality.
+Contributions welcome! Please open an issue or pull request adding a resource with: (1) Name, (2) URL, (3) one-sentence description, (4) (sub)category suggestion. Keep descriptions concise, neutral, and avoid promotional language. Duplicates or out-of-scope links (non-ICESat-2 focused) may be declined to maintain curation quality.
 
 ---
 
