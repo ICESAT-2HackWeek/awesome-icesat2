@@ -1,0 +1,32 @@
+# Configuration for lychee link checker
+# Docs: https://github.com/lycheeverse/lychee
+
+# Exclude patterns (regex) for domains that often rate-limit or require auth.
+exclude = [
+  "twitter.com",          # dynamic / rate limited
+  "status.earthdata.nasa.gov", # occasional transient status checks
+  "earth.gsfc.nasa.gov",  # intermittent TLS/hsts issues
+]
+
+# Accept 429 (too many requests) as valid temporarily
+accept = [429]
+
+# Retry settings
+max_retries = 3
+retry_wait_time = 3
+retry_backoff = true
+
+# Timeouts (seconds)
+request_timeout = 20
+connect_timeout = 10
+
+# Cache results between runs via action cache
+cache = true
+
+# Only check markdown
+include = ["README.md"]
+
+# Require HTTPS (warn if http)
+scheme = ["https", "http"]
+
+# Verbose output disabled; report saved as lychee-report.md automatically by action

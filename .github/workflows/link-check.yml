@@ -1,0 +1,40 @@
+name: Link Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 6 * * 1' # Weekly Monday 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache lychee
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/lychee
+          key: lychee-${{ runner.os }}-${{ hashFiles('**/link-check.toml') }}
+
+      - name: Run lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --config link-check.toml README.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload lychee report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lychee-report
+          path: lychee-report.md
+
+  # lychee-action exits non-zero automatically if broken links are found
