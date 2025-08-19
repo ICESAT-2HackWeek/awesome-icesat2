@@ -30,8 +30,8 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python) and struct
 
 ## General / Multi-Purpose
 
-* [icepyx](https://github.com/icepyx/icepyx) - Unified Python interface for discovery, access, subsetting, and basic analysis of ICESat-2 (ATL*) products via NASA APIs.
-* [SlideRule Earthdata](https://github.com/SlideRuleEarth/sliderule) - Server-side on-demand ICESat-2 photon subsetting, filtering, and derived metrics with Python & C++ API clients.
+* [icepyx](https://github.com/icepyx/icepyx) - Unified Python interface for discovery, access, subsetting, and basic analysis of ICESat-2 (ATL*) products via NASA APIs. ![last commit](https://img.shields.io/github/last-commit/icepyx/icepyx?label=last%20commit)
+* [SlideRule Earthdata](https://github.com/SlideRuleEarth/sliderule) - Server-side on-demand ICESat-2 photon subsetting, filtering, and derived metrics with Python & C++ API clients. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule?label=last%20commit)
 * [OpenAltimetry](https://openaltimetry.org/) - Web platform for interactive browsing, filtering, and quicklooks of ICESat-2 and ICESat elevation tracks.
 * [NSIDC ICESat-2 Data Guide](https://nsidc.org/data/icesat-2) - Official product documentation, user guides, and ancillary references for all ATL datasets.
 * [Earthdata Search](https://search.earthdata.nasa.gov/search?q=ICESat-2) - NASA web interface to discover, subset, and order ICESat-2 granules with custom spatial/temporal filters.
@@ -56,17 +56,17 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python) and struct
 
 ## Python Libraries
 
-* [icepyx](https://github.com/icepyx/icepyx) - Streamlines search, download, subsetting, and reading of multiple ATL product HDF5 structures.
-* [sliderule-python](https://github.com/SlideRuleEarth/sliderule-python) - Python client to query SlideRule services and retrieve photon and elevation products as dataframes/arrays.
-* [ATL03 Reader Examples](https://github.com/nsidc/NSIDC-Data-Tutorials/tree/main/ICESat-2) - Official sample code for opening and interpreting ATL03 & higher-level products.
-* [h5py](https://github.com/h5py/h5py) - Fundamental HDF5 interface used to navigate ICESat-2 file hierarchies and metadata.
-* [xarray](https://github.com/pydata/xarray) - Labeled N-D data structures facilitating gridding and combining ATL products (esp. ATL10, ATL14, ATL15).
-* [geopandas](https://github.com/geopandas/geopandas) - Vector geospatial operations for ground tracks, region-of-interest clipping, and spatial joins.
-* [Shapely](https://github.com/shapely/shapely) - Geometric operations used for photon filtering by polygons or buffered tracks.
-* [pdal-python](https://github.com/PDAL/PDAL) - Point cloud filters and pipelines adaptable to photon-level (ATL03) processing workflows.
-* [laspy](https://github.com/laspy/laspy) - Read/write LAS/LAZ allowing export/interchange of ICESat-2 derived point clouds to lidar ecosystems.
-* [pyproj](https://github.com/pyproj4/pyproj) - Coordinate transformations (e.g., WGS84 <-> polar stereographic) essential for polar ATL products.
-* [rasterio](https://github.com/rasterio/rasterio) - Creation and manipulation of gridded elevation/freeboard/rasterized photon density outputs.
+* [icepyx](https://github.com/icepyx/icepyx) - Streamlines search, download, subsetting, and reading of multiple ATL product HDF5 structures. ![last commit](https://img.shields.io/github/last-commit/icepyx/icepyx?label=last%20commit)
+* [sliderule-python](https://github.com/SlideRuleEarth/sliderule-python) - Python client to query SlideRule services and retrieve photon and elevation products as dataframes/arrays. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule-python?label=last%20commit)
+* [ATL03 Reader Examples](https://github.com/nsidc/NSIDC-Data-Tutorials/tree/main/ICESat-2) - Official sample code for opening and interpreting ATL03 & higher-level products. ![last commit](https://img.shields.io/github/last-commit/nsidc/NSIDC-Data-Tutorials?label=last%20commit)
+* [h5py](https://github.com/h5py/h5py) - Fundamental HDF5 interface used to navigate ICESat-2 file hierarchies and metadata. ![last commit](https://img.shields.io/github/last-commit/h5py/h5py?label=last%20commit)
+* [xarray](https://github.com/pydata/xarray) - Labeled N-D data structures facilitating gridding and combining ATL products (esp. ATL10, ATL14, ATL15). ![last commit](https://img.shields.io/github/last-commit/pydata/xarray?label=last%20commit)
+* [geopandas](https://github.com/geopandas/geopandas) - Vector geospatial operations for ground tracks, region-of-interest clipping, and spatial joins. ![last commit](https://img.shields.io/github/last-commit/geopandas/geopandas?label=last%20commit)
+* [Shapely](https://github.com/shapely/shapely) - Geometric operations used for photon filtering by polygons or buffered tracks. ![last commit](https://img.shields.io/github/last-commit/shapely/shapely?label=last%20commit)
+* [pdal-python](https://github.com/PDAL/PDAL) - Point cloud filters and pipelines adaptable to photon-level (ATL03) processing workflows. ![last commit](https://img.shields.io/github/last-commit/PDAL/PDAL?label=last%20commit)
+* [laspy](https://github.com/laspy/laspy) - Read/write LAS/LAZ allowing export/interchange of ICESat-2 derived point clouds to lidar ecosystems. ![last commit](https://img.shields.io/github/last-commit/laspy/laspy?label=last%20commit)
+* [pyproj](https://github.com/pyproj4/pyproj) - Coordinate transformations (e.g., WGS84 <-> polar stereographic) essential for polar ATL products. ![last commit](https://img.shields.io/github/last-commit/pyproj4/pyproj?label=last%20commit)
+* [rasterio](https://github.com/rasterio/rasterio) - Creation and manipulation of gridded elevation/freeboard/rasterized photon density outputs. ![last commit](https://img.shields.io/github/last-commit/rasterio/rasterio?label=last%20commit)
 * [scipy](https://scipy.org/) - Interpolation, signal filtering, and statistical operations on photon elevations and waveforms.
 * [numpy](https://github.com/numpy/numpy) - Core numerical array computations underlying all higher-level processing.
 
@@ -74,7 +74,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python) and struct
 
 * [PDAL](https://pdal.io/) - Extensible point cloud processing engine for classification, thinning, and reprojection of photon data.
 * [Entwine](https://entwine.io/) - Builds efficient point cloud octrees enabling web visualization of derived ICESat-2 point sets.
-* [Potree Converter](https://github.com/potree/PotreeConverter) - Converts point clouds (e.g., exported ATL03 photons) into multiresolution formats for web viewing.
+* [Potree Converter](https://github.com/potree/PotreeConverter) - Converts point clouds (e.g., exported ATL03 photons) into multiresolution formats for web viewing. ![last commit](https://img.shields.io/github/last-commit/potree/PotreeConverter?label=last%20commit)
 * [GDAL](https://gdal.org/) - Foundational raster & vector translation library supporting HDF5 subdatasets and reprojection.
 * [Proj](https://proj.org/) - Standalone cartographic transformations brand powering pyproj & GDAL coordinate operations.
 * [WhiteboxTools](https://www.whiteboxgeo.com/) - Terrain analysis utilities useful after gridding surface heights from ICESat-2.
@@ -82,7 +82,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python) and struct
 ## Visualization & Exploration
 
 * [OpenAltimetry](https://openaltimetry.org/) - Interactive web map to explore tracks, segments, elevations, and canopy metrics.
-* [sliderule-jupyter](https://github.com/SlideRuleEarth/sliderule-python/tree/master/notebooks) - Notebook examples for dynamic photon queries and quick visual diagnostic plots.
+* [sliderule-jupyter](https://github.com/SlideRuleEarth/sliderule-python/tree/master/notebooks) - Notebook examples for dynamic photon queries and quick visual diagnostic plots. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule-python?label=last%20commit)
 * [Kepler.gl](https://kepler.gl/) - Browser-based large-scale geospatial visualization for photon point CSV exports.
 * [Geoviews / Holoviews](https://geoviews.org/) - High-level Python visualization building dynamic datashaded photon density plots.
 * [Plotly Express](https://plotly.com/python/plotly-express/) - Interactive scatter and profile plots of track segments and elevations.
@@ -90,14 +90,14 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python) and struct
 
 ## Thematic Science Tools
 
-* [ATL11 Time Series Toolkit](https://github.com/ICESAT-2HackWeek/ATL11_ice_focused) - Example workflows for multi-pass elevation change using repeat-track ATL11.
+* [ATL11 Time Series Toolkit](https://github.com/ICESAT-2HackWeek/ATL11_ice_focused) - Example workflows for multi-pass elevation change using repeat-track ATL11. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/ATL11_ice_focused?label=last%20commit)
 * [ATL14/ATL15 Gridded Products](https://nsidc.org/data/ATL14) - Basin-scale ice sheet elevation change and reference surface products for mass balance studies.
 * [ICESat-2 Sea Ice Dashboard](https://earth.gsfc.nasa.gov/cryo/data/icesat-2) - NASA visualizations & summaries of sea ice freeboard and thickness metrics.
-* [Freeboard & Thickness Notebooks](https://github.com/ICESAT-2HackWeek/sea-ice) - Community notebooks deriving sea ice freeboard/thickness from ATL07/ATL10.
-* [Canopy Height (ATL08) Workflows](https://github.com/ICESAT-2HackWeek/vegetation) - Examples extracting vegetation structure metrics for ecology applications.
+* [Freeboard & Thickness Notebooks](https://github.com/ICESAT-2HackWeek/sea-ice) - Community notebooks deriving sea ice freeboard/thickness from ATL07/ATL10. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/sea-ice?label=last%20commit)
+* [Canopy Height (ATL08) Workflows](https://github.com/ICESAT-2HackWeek/vegetation) - Examples extracting vegetation structure metrics for ecology applications. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/vegetation?label=last%20commit)
 * [Inland Water Elevation (ATL13)](https://nsidc.org/data/ATL13) - Derived inland water surface heights facilitating hydrologic storage change analyses.
 * [Ocean Surface Height (ATL12)](https://nsidc.org/data/ATL12) - Sea surface height and geophysical corrections for oceanography and circulation studies.
-* [Photon Classification Models](https://github.com/ICESAT-2HackWeek/photon-classification) - Machine learning examples for separating signal and noise photons.
+* [Photon Classification Models](https://github.com/ICESAT-2HackWeek/photon-classification) - Machine learning examples for separating signal and noise photons. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/photon-classification?label=last%20commit)
 
 ## Quality, Calibration & Ancillary Data
 
@@ -111,7 +111,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python) and struct
 ## Tutorials, Courses & Notebooks
 
 * [ICESat-2 Hackweek Archives](https://icesat-2-2023.hackweek.io/) - Curated schedule, lecture recordings, and code from annual community hackweeks.
-* [NSIDC Data Tutorials](https://github.com/nsidc/NSIDC-Data-Tutorials/tree/main/ICESat-2) - Official step-by-step Python notebooks for opening, filtering, and plotting ATL datasets.
+* [NSIDC Data Tutorials](https://github.com/nsidc/NSIDC-Data-Tutorials/tree/main/ICESat-2) - Official step-by-step Python notebooks for opening, filtering, and plotting ATL datasets. ![last commit](https://img.shields.io/github/last-commit/nsidc/NSIDC-Data-Tutorials?label=last%20commit)
 * [NASA Earthdata Webinars](https://www.earthdata.nasa.gov/learn/webinars-and-tutorials) - Recorded sessions often featuring ICESat-2 access and application topics.
 * [SlideRule Documentation & Notebooks](https://slideruleearth.io/rtd/) - API usage guides, performance notes, and reproducible photon workflow examples.
 * [Pangeo Gallery ICESat-2](https://gallery.pangeo.io/) - Shared scientific notebooks demonstrating cloud-native analysis patterns.
