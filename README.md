@@ -26,14 +26,13 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 
 ## General / Multi-Purpose
 
-* [icepyx](https://github.com/icepyx/icepyx) - Unified Python interface for discovery, access, subsetting, and basic analysis of ICESat-2 (ATL*) products via NASA APIs. ![last commit](https://img.shields.io/github/last-commit/icepyx/icepyx?label=last%20commit)
-* [SlideRule Earthdata](https://github.com/SlideRuleEarth/sliderule) - Server-side on-demand ICESat-2 photon subsetting, filtering, and derived metrics with Python & C++ API clients. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule?label=last%20commit)
 * [OpenAltimetry](https://openaltimetry.org/) - Web platform for interactive browsing, filtering, and quicklooks of ICESat-2 and ICESat elevation tracks.
 * [NSIDC ICESat-2 Data Guide](https://nsidc.org/data/icesat-2) - Official product documentation, user guides, and ancillary references for all ATL datasets.
-* [Earthdata Search](https://search.earthdata.nasa.gov/search?q=ICESat-2) - NASA web interface to discover, subset, and order ICESat-2 granules with custom spatial/temporal filters.
+* [Earthaccess](https://github.com/nsidc/earthaccess) - python library to search for, and download or stream NASA Earth science data with just a few lines of code. ![last commit](https://img.shields.io/github/last-commit/nsidc/earthaccess?label=last%20commit)
 
 ## Data Discovery & Access APIs
 
+* [Earthdata Search](https://search.earthdata.nasa.gov/search?q=ICESat-2) - NASA web interface to discover, subset, and order ICESat-2 granules with custom spatial/temporal filters.
 * [NASA CMR API](https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html) - REST search endpoint for programmatic discovery of ICESat-2 granules and collections.
 * [NSIDC Subsetting API](https://nsidc.org/support/subsetting) - API enabling spatial, temporal, and parameter-level subsetting of ICESat-2 ATL products.
 * [Harmony API](https://harmony.earthdata.nasa.gov/) - NASA cloud orchestration API for standardized reformatting, reprojection, and subsetting (emerging ICESat-2 support).
@@ -44,27 +43,13 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 
 ## Cloud & Scalable Processing
 
-* [SlideRule on AWS](https://slideruleearth.io/) - Managed clusters and deploy recipes for large-scale photon querying and derived raster generation.
-* [ICESat-2 Hackweek Cloud Templates](https://github.com/ICESAT-2HackWeek) - Reusable Jupyter/Cloud workflow examples from community hackweeks for rapid startup.
-* [HyP3 (ASF)](https://hyp3-docs.asf.alaska.edu/) - On-demand processing platform (SAR-focused) that increasingly interoperates with ICESat-2 derived analyses.
-* [Open Science Lab (NSIDC)](https://nsidc.org/opensciencelab) - Cloud-hosted workflows and reproducible examples including ICESat-2 Jupyter notebooks.
-* [Pangeo](https://pangeo.io/) - Community cloud ecosystem enabling scalable analysis (ICESat-2 photon & gridded data with dask/xarray patterns).
+* [SlideRule Earthdata](https://slideruleearth.io) - Server-side, scalable ICESat-2 photon subsetting, filtering, and custom processing with Python & C++ API clients. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule?label=last%20commit)
 
 ## Python Libraries
 
-* [icepyx](https://github.com/icepyx/icepyx) - Streamlines search, download, subsetting, and reading of multiple ATL product HDF5 structures. ![last commit](https://img.shields.io/github/last-commit/icepyx/icepyx?label=last%20commit)
+* [icepyx](https://icepyx.readthedocs.io) - Unified Python interface for discovery, access, subsetting, and basic analysis of ICESat-2 (ATL*) products via NASA APIs. ![last commit](https://img.shields.io/github/last-commit/icesat2py/icepyx?label=last%20commit)
 * [sliderule-python](https://github.com/SlideRuleEarth/sliderule-python) - Python client to query SlideRule services and retrieve photon and elevation products as dataframes/arrays. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule-python?label=last%20commit)
 * [ATL03 Reader Examples](https://github.com/nsidc/NSIDC-Data-Tutorials/tree/main/ICESat-2) - Official sample code for opening and interpreting ATL03 & higher-level products. ![last commit](https://img.shields.io/github/last-commit/nsidc/NSIDC-Data-Tutorials?label=last%20commit)
-* [h5py](https://github.com/h5py/h5py) - Fundamental HDF5 interface used to navigate ICESat-2 file hierarchies and metadata. ![last commit](https://img.shields.io/github/last-commit/h5py/h5py?label=last%20commit)
-* [xarray](https://github.com/pydata/xarray) - Labeled N-D data structures facilitating gridding and combining ATL products (esp. ATL10, ATL14, ATL15). ![last commit](https://img.shields.io/github/last-commit/pydata/xarray?label=last%20commit)
-* [geopandas](https://github.com/geopandas/geopandas) - Vector geospatial operations for ground tracks, region-of-interest clipping, and spatial joins. ![last commit](https://img.shields.io/github/last-commit/geopandas/geopandas?label=last%20commit)
-* [Shapely](https://github.com/shapely/shapely) - Geometric operations used for photon filtering by polygons or buffered tracks. ![last commit](https://img.shields.io/github/last-commit/shapely/shapely?label=last%20commit)
-* [pdal-python](https://github.com/PDAL/PDAL) - Point cloud filters and pipelines adaptable to photon-level (ATL03) processing workflows. ![last commit](https://img.shields.io/github/last-commit/PDAL/PDAL?label=last%20commit)
-* [laspy](https://github.com/laspy/laspy) - Read/write LAS/LAZ allowing export/interchange of ICESat-2 derived point clouds to lidar ecosystems. ![last commit](https://img.shields.io/github/last-commit/laspy/laspy?label=last%20commit)
-* [pyproj](https://github.com/pyproj4/pyproj) - Coordinate transformations (e.g., WGS84 <-> polar stereographic) essential for polar ATL products. ![last commit](https://img.shields.io/github/last-commit/pyproj4/pyproj?label=last%20commit)
-* [rasterio](https://github.com/rasterio/rasterio) - Creation and manipulation of gridded elevation/freeboard/rasterized photon density outputs. ![last commit](https://img.shields.io/github/last-commit/rasterio/rasterio?label=last%20commit)
-* [scipy](https://scipy.org/) - Interpolation, signal filtering, and statistical operations on photon elevations and waveforms.
-* [numpy](https://github.com/numpy/numpy) - Core numerical array computations underlying all higher-level processing.
 
 ## Point Cloud / Geospatial Tooling
 
@@ -106,6 +91,7 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 
 ## Tutorials, Courses & Notebooks
 
+* [ICESat-2 Hackweek GitHub Organization](https://github.com/ICESAT-2HackWeek) - Reusable Jupyter/Cloud workflow examples from community hackweeks.
 * [ICESat-2 Hackweek Archives](https://icesat-2-2023.hackweek.io/) - Curated schedule, lecture recordings, and code from annual community hackweeks.
 * [NSIDC Data Tutorials](https://github.com/nsidc/NSIDC-Data-Tutorials/tree/main/ICESat-2) - Official step-by-step Python notebooks for opening, filtering, and plotting ATL datasets. ![last commit](https://img.shields.io/github/last-commit/nsidc/NSIDC-Data-Tutorials?label=last%20commit)
 * [NASA Earthdata Webinars](https://www.earthdata.nasa.gov/learn/webinars-and-tutorials) - Recorded sessions often featuring ICESat-2 access and application topics.
