@@ -12,9 +12,7 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 - [Data Discovery & Access APIs](#data-discovery--access-apis)
 - [Cloud & Scalable Processing](#cloud--scalable-processing)
 - [Python Libraries](#python-libraries)
-- [Point Cloud / Geospatial Tooling](#point-cloud--geospatial-tooling)
 - [Visualization & Exploration](#visualization--exploration)
-- [Thematic Science Tools](#thematic-science-tools)
 - [Tutorials, Courses & Notebooks](#tutorials-courses--notebooks)
 - [Quality, Calibration & Ancillary Data](#quality-calibration--ancillary-data)
 - [Related Missions & Complementary Datasets](#related-missions--complementary-datasets)
@@ -25,7 +23,7 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 
 ## General / Multi-Purpose
 
-* [NSIDC ICESat-2 Landing Page](https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/icesat-2)
+* [NASA ICESat-2 Landing Page](https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/icesat-2)
 * [NSIDC ICESat-2 Data Guide](https://nsidc.org/data/icesat-2) - Official product documentation, user guides, and ancillary references for all ATL datasets.
 
 ## Data Discovery & Access APIs
@@ -47,18 +45,6 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 
 * [OpenAltimetry](https://openaltimetry.earthdatacloud.nasa.gov/data/) - Web platform for interactive browsing, filtering, and quicklooks of ICESat-2 and ICESat elevation tracks.
 * [SlideRule Earth Example Notebooks](https://github.com/SlideRuleEarth/sliderule-python/tree/main/examples) - Notebook examples for dynamic photon queries and quick visual diagnostic plots. ![last commit](https://img.shields.io/github/last-commit/SlideRuleEarth/sliderule-python?label=last%20commit)
-
-## Thematic Science Tools
-
-* [ATL11 Time Series Toolkit](https://github.com/ICESAT-2HackWeek/ATL11_ice_focused) - Example workflows for multi-pass elevation change using repeat-track ATL11. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/ATL11_ice_focused?label=last%20commit)
-* [ATL14/ATL15 Gridded Products](https://nsidc.org/data/ATL14) - Basin-scale ice sheet elevation change and reference surface products for mass balance studies.
-* [ICESat-2 Sea Ice Dashboard](https://earth.gsfc.nasa.gov/cryo/data/icesat-2) - NASA visualizations & summaries of sea ice freeboard and thickness metrics.
-* [Freeboard & Thickness Notebooks](https://github.com/ICESAT-2HackWeek/sea-ice) - Community notebooks deriving sea ice freeboard/thickness from ATL07/ATL10. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/sea-ice?label=last%20commit)
-* [Canopy Height (ATL08) Workflows](https://github.com/ICESAT-2HackWeek/vegetation) - Examples extracting vegetation structure metrics for ecology applications. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/vegetation?label=last%20commit)
-* [Inland Water Elevation (ATL13)](https://nsidc.org/data/ATL13) - Derived inland water surface heights facilitating hydrologic storage change analyses.
-* [Ocean Surface Height (ATL12)](https://nsidc.org/data/ATL12) - Sea surface height and geophysical corrections for oceanography and circulation studies.
-* [Photon Classification Models](https://github.com/ICESAT-2HackWeek/photon-classification) - Machine learning examples for separating signal and noise photons. ![last commit](https://img.shields.io/github/last-commit/ICESAT-2HackWeek/photon-classification?label=last%20commit)
-* [ATL03 Reader Examples](https://github.com/nsidc/NSIDC-Data-Tutorials/tree/main/ICESat-2) - Official sample code for opening and interpreting ATL03 & higher-level products. ![last commit](https://img.shields.io/github/last-commit/nsidc/NSIDC-Data-Tutorials?label=last%20commit)
 
 ## Tutorials, Courses & Notebooks
 
