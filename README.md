@@ -64,7 +64,7 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 * [ICESat (GLAS)](https://nsidc.org/data/icesat) - Predecessor laser altimetry mission enabling multi-epoch elevation change assessment.
 * [GEDI](https://gedi.umd.edu/) - Spaceborne waveform lidar complementing ICESat-2 canopy height sampling for biomass analyses.
 * [CryoSat-2](https://earth.esa.int/eogateway/missions/cryosat) - Radar altimetry mission offering complementary sea ice thickness and ice sheet elevation trends.
-* [Sentinel-1 SAR](https://sentinel.esa.int/) - Active microwave backscatter supporting surface type classification and change detection alongside elevation trends.
+* [Sentinel-1 SAR](https://dataspace.copernicus.eu/data-collections/sentinel-data/sentinel-1) - Active microwave backscatter supporting surface type classification and change detection alongside elevation trends.
 * [Landsat Collection](https://landsat.gsfc.nasa.gov/) - Multispectral imagery for land cover context and seasonal melt pond / vegetation mapping.
 * [MODIS / VIIRS Snow & Sea Ice](https://nsidc.org/data/modis) - Daily snow/ice products enabling temporal context for elevation/freeboard retrievals.
 * [DEM Auxiliary Data (REMA/ArcticDEM)](https://www.pgc.umn.edu/data/arcticdem/) - Polar DEM mosaics used for reference elevation and geolocation QA.
