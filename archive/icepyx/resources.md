@@ -18,20 +18,20 @@ reproducible workflow that leverages existing tools wherever possible (see [Comp
 and can be run locally, using high performance computing, or in the cloud.
 A few other options available for querying, visualizing, and downloading ICESat-2 data files are:
 
-- `earthaccess Python library <https://earthaccess.readthedocs.io>`_
+- [earthaccess Python library](https://earthaccess.readthedocs.io)
 
   - A powerful tool for querying and downloading NASA datasets.
   - Seamlessly handles authentication and cloud tokening.
   - Under active development to expand functionality,
     including adding icepyx as a plugin to enable subsetting services for ICESat-2 data.
 
-- `NSIDC (DAAC) Data Access <https://nsidc.org/data/icesat-2>`_
+- [NSIDC (DAAC) Data Access](https://nsidc.org/data/icesat-2)
 
   - Select “Data from the right hand menu.
     Choose your dataset (ATL##).
     Then, use the spatial and temporal filters to narrow your list of granules available for download.
 
-- `OpenAltimetry <https://openaltimetry.earthdatacloud.nasa.gov>`_
+- [OpenAltimetry](https://openaltimetry.earthdatacloud.nasa.gov)
 
   - Collaboration between NSIDC, Scripps, and San Diego Supercomputer Center.
   - A web tool to visualize and download ICESat and ICESat-2 surface heights.
@@ -42,7 +42,8 @@ A few other options available for querying, visualizing, and downloading ICESat-
 Software Packages for Working with ICESat-2 Data
 ------------------------------------------------
 icepyx is but one of several software packages designed to improve user experience with ICESat-2 data.
-[Other packages active in the community.](./IS2_software)
+
+[Other packages active in the community.](./IS2_software.rst)
 
 
 Resources Developed For and During Hackweeks
@@ -50,7 +51,10 @@ Resources Developed For and During Hackweeks
 Hackweeks give participants the opportunity to develop code to help download and/or analyze ICESat-2 data.
 Many of these projects become inactive following the event, but they may provide useful workflows for users to work with.
 
-[2019 Hackweek](./resources/2019_IS2_HW)
-[2020 Hackweek](./resources/2020_IS2_HW)
-[2022 Hackweek](./resources/2022_IS2_HW)
-[2023 Hackweek](./resources/2023_IS2_HW)
+[2019 Hackweek](./resources/2019_IS2_HW.rst)
+
+[2020 Hackweek](./resources/2020_IS2_HW.rst)
+
+[2022 Hackweek](./resources/2022_IS2_HW.rst)
+
+[2023 Hackweek](./resources/2023_IS2_HW.rst)
