@@ -4,4 +4,4 @@ Multiple curated lists were combined to create the centralized list in this repo
 
 -----
 
-[icepyx](./icepyx/resources.rst)
+[icepyx](./icepyx/resources.md)
