@@ -1,7 +1,7 @@
 ICESat-2 Resource Guide
 =======================
 
-Originally published and maintained in [icepyx]() from 2020-2025.
+Originally published and maintained in [icepyx](https://icepyx.readthedocs.io/en/latest/index.html) from 2020-2025.
 
 This guide contains information regarding available resources for working with ICESat-2 datasets,
 both specifically (e.g. for ICESat-2 data) and more broadly (e.g. point cloud analysis of LiDAR datasets).
@@ -14,7 +14,7 @@ We reserve the right to reject suggested resources that fall outside the scope o
 Other Ways to Access ICESat-2 Data
 ----------------------------------
 icepyx aims to provide intuitive, object-based methods for finding, obtaining, visualizing, and analyzing ICESat-2 data as part of an open,
-reproducible workflow that leverages existing tools wherever possible (see :ref:`Complementary GitHub Repositories <complementary_GH_repos_label>`)
+reproducible workflow that leverages existing tools wherever possible (see [Complementary GitHub Repositories](./IS2_software#complementary_GH_repos_label))
 and can be run locally, using high performance computing, or in the cloud.
 A few other options available for querying, visualizing, and downloading ICESat-2 data files are:
 
@@ -42,22 +42,15 @@ A few other options available for querying, visualizing, and downloading ICESat-
 Software Packages for Working with ICESat-2 Data
 ------------------------------------------------
 icepyx is but one of several software packages designed to improve user experience with ICESat-2 data.
-The links below highlight other packages active in the community.
+[Other packages active in the community.](./IS2_software)
 
-.. toctree::
-  :maxdepth: 2
-
-  resources/IS2_software
 
 Resources Developed For and During Hackweeks
 --------------------------------------------
 Hackweeks give participants the opportunity to develop code to help download and/or analyze ICESat-2 data.
 Many of these projects become inactive following the event, but they may provide useful workflows for users to work with.
 
-.. toctree::
-  :maxdepth: 2
-
-  resources/2019_IS2_HW
-  resources/2020_IS2_HW
-  resources/2022_IS2_HW
-  resources/2023_IS2_HW
+[2019 Hackweek](./resources/2019_IS2_HW)
+[2020 Hackweek](./resources/2020_IS2_HW)
+[2022 Hackweek](./resources/2022_IS2_HW)
+[2023 Hackweek](./resources/2023_IS2_HW)
