@@ -1,4 +1,3 @@
-(awesome-icesat2)=
 # Awesome ICESat-2
 ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) [![Link Check](https://github.com/ICESAT-2HackWeek/awesome-icesat2/actions/workflows/link-check.yml/badge.svg)](https://github.com/ICESAT-2HackWeek/awesome-icesat2/actions/workflows/link-check.yml)
 
@@ -14,8 +13,10 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 - [Data Discovery & Access APIs](#data-discovery--access-apis)
 - [Cloud & Scalable Processing](#cloud--scalable-processing)
 - [Python Libraries](#python-libraries)
+- [Regional and domain-specific resources](#regional-and-domain-specific-resources)
 - [Visualization & Exploration](#visualization--exploration)
 - [Tutorials, Courses & Notebooks](#tutorials-courses--notebooks)
+- [Standard Product Generation](#standard-product-generation)
 - [Quality, Calibration & Ancillary Data](#quality-calibration--ancillary-data)
 - [Related Missions & Complementary Datasets](#related-missions--complementary-datasets)
 - [Community & Communication](#community--communication)
@@ -40,8 +41,17 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 
 ## Python Libraries
 
-* [icepyx](https://icepyx.readthedocs.io) - Unified Python interface for discovery, access, subsetting, and basic analysis of ICESat-2 (ATL*) products via NASA APIs. ![last commit](https://img.shields.io/github/last-commit/icesat2py/icepyx?label=last%20commit)
-* [Earthaccess](https://github.com/nsidc/earthaccess) - python library to search for, and download or stream NASA Earth science data with just a few lines of code. ![last commit](https://img.shields.io/github/last-commit/nsidc/earthaccess?label=last%20commit)
+* [icepyx](https://icepyx.readthedocs.io) - Unified interface for discovery, access, subsetting, and basic analysis of ICESat-2 (ATL*) products via NASA APIs. ![last commit](https://img.shields.io/github/last-commit/icesat2py/icepyx?label=last%20commit)
+* [Earthaccess](https://github.com/nsidc/earthaccess) - Search for, and download or stream NASA Earth science data with just a few lines of code. ![last commit](https://img.shields.io/github/last-commit/nsidc/earthaccess?label=last%20commit)
+- [pointCollection](https://github.com/SmithB/pointCollection) - A library of code for basic interactions with point data (including ICESat-2 tools) ![last commit](https://img.shields.io/github/last-commit/SmithB/pointCollection?label=last%20commit)
+- [altimetryFit](https://github.com/SmithB/altimetryFit) - A framework for fitting smooth surfaces to a variety of types of altimetry data. ![last commit](https://img.shields.io/github/last-commit/SmithB/altimetryFit?label=last%20commit)
+- [CapToolkit](https://github.com/nasa-jpl/captoolkit) - A do-it-all library of code for working with cryospheric altimetry data. ![last commit](https://img.shields.io/github/last-commit/nasa-jpl/captoolkit?label=last%20commit)
+
+## Regional and domain-specific resources
+
+- [PhoREAL](https://github.com/icesat-2UT/PhoREAL) - A collection of software for analysis of ICESat-2 land and vegetation data. ![last commit](https://img.shields.io/github/last-commit/icesat-2UT/PhoREAL?label=last%20commit)
+- [The Antarctic Rift Catalog Project](https://github.com/bradlipovsky/antarctic-rift-catalog) - A project to map rifts in ice shelves around Antarctica. ![last commit](https://img.shields.io/github/last-commit/bradlipovsky/antarctic-rift-catalog?label=last%20commit)
+- [Grounding-Zones](https://github.com/tsutterley/Grounding-Zones) - Tools for Estimating Grounding Zone Locations with data from NASA Polar Altimetry Missions. ![last commit](https://img.shields.io/github/last-commit/tsutterley/Grounding-Zones?label=last%20commit)
 
 ## Visualization & Exploration
 
@@ -55,6 +65,12 @@ Inspired by [awesome-sar](https://github.com/RadarCODE/awesome-sar) with initial
 * [ICESat-2 Hackweek Websites](https://icesat-2.hackweek.io) - JupyterBook websites for ICESat-2 Hackweeks hosted at University of Washington 2019-2025.
 * [NSIDC Data Tutorials](https://github.com/nsidc/NSIDC-Data-Tutorials) - Official step-by-step Python notebooks for opening, filtering, and plotting ATL datasets. ![last commit](https://img.shields.io/github/last-commit/nsidc/NSIDC-Data-Tutorials?label=last%20commit)
 * [OpenAltimetry Tutorials](https://nsidc.org/data/user-resources/help-center/how-use-openaltimetry-icesatglas-data-products) - Usage guides for track selection, filtering, and downloading subsets.
+
+## Standard Product Generation
+
+* [ATL11](https://github.com/suzanne64/ATL11) - Code to generate the ATL11 (Slope-Corrected Land Ice Height Time Series) product based on the ATL06 (Land-ice height) product. ![last commit](https://img.shields.io/github/last-commit/suzanne64/ATL11?label=last%20commit)
+
+* [ATL14/15](https://github.com/SmithB/ATL1415) - Code to generate the gridded ice-sheet DEM and height-change products from ATL11. ![last commit](https://img.shields.io/github/last-commit/SmithB/ATL1415?label=last%20commit)
 
 ## Quality, Calibration & Ancillary Data
 
