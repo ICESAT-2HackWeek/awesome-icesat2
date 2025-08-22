@@ -1,5 +1,6 @@
 (awesome-icesat2)=
-# Awesome ICESat-2 ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) [![Link Check](https://github.com/ICESAT-2HackWeek/awesome-icesat2/actions/workflows/link-check.yml/badge.svg)](https://github.com/ICESAT-2HackWeek/awesome-icesat2/actions/workflows/link-check.yml)
+# Awesome ICESat-2
+![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) [![Link Check](https://github.com/ICESAT-2HackWeek/awesome-icesat2/actions/workflows/link-check.yml/badge.svg)](https://github.com/ICESAT-2HackWeek/awesome-icesat2/actions/workflows/link-check.yml)
 
 A curated list of awesome ICESat-2 software, libraries, services, portals, and learning resources.
 
