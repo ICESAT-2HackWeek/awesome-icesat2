@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 6d12c93a-9ce6-44f9-ade7-525d03ea73c5
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/ICESAT-2HackWeek/awesome-icesat2
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: article-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png

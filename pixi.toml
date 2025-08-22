@@ -1,0 +1,16 @@
+[workspace]
+authors = ["Scott Henderson <3924836+scottyhq@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "awesome-icesat2"
+platforms = ["osx-arm64", "linux-64"]
+version = "0.1.0"
+
+[tasks]
+serve='myst start'
+build='myst build --html'
+check-links='myst build --check-links'
+spellcheck='codespell --skip  _build'
+
+[dependencies]
+mystmd = ">=1.6.0,<2"
+codespell = ">=2.4.1,<3"
